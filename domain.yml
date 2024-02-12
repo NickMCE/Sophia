@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - work
+  - questionnaire
+  - purpose
+  - details
+  - projects
+
+# slots:
+#   name:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: name
+#     initial_value: null
+#   location:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: location
+#     initial_value: null
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "shut the fuck up bitch !:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am Sophia but you can call me sophie. I am Mr Nikhil Srinivasan's Virtual PA."
+
+  utter_work:
+  - text: "Well Mr Nikhil works and services include:
+           
+           - Creating customized chatbots for Businesses and Organizations.
+           - Data Analytics
+           - Developing AI algorithms to optimize organizations work."
+  utter_purpose:
+  - text: "My purpose is to assist you Mr Nikhil and help him by debriefing his clients 
+           and customers about his work. In short I would take care of all the paper work."
+
+  utter_details:
+  - text: "Well I am afraid I can't give you his personal contact details but I can help you by giving his email:
+              
+            - ns11703@gmail.com
+            - snikhil6295@gmail.com"
+
+  utter_questionnaire:
+  - text: "Well if you want to directly contact Mr Nikhil or want to submit your queris please fill this form: 
+              (https://forms.gle/NyAr7NVxt6WkgY8o8)"
+  
+  # utter_greeting:
+  # - text: "Hello {name}! Welcome to pornhub."
+  
+  # utter_location:
+  # - text: "I see you're from {location}."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

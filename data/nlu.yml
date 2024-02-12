@@ -1,0 +1,203 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - may i know who are you?
+    - who is this?
+
+- intent: work
+  examples: |
+    - what work does he do
+    - what work does Mr Nikhil does
+    - what is his work
+    - what do he do
+    - can I know what he does
+    - how does he make a living
+    - What does he do for a living?
+    - Can you tell me about his profession?
+    - What's his occupation?
+    - Could you describe his job?
+    - I'm curious about his career. What does he do?
+    - Tell me about his line of work.
+    - Can you give me some information about his employment?
+    - What's his job title?
+    - I'd like to know more about his work. What does he do exactly?
+    - Could you provide details about his professional life?
+
+- intent: purpose
+  examples: |
+    - what is your purpose
+    - why are you here
+    - may I know your purpose
+    - can I know what do you do
+    - what do you do?
+    - can I know your purpose?
+    - may I know what you do?
+    - What's your main objective?
+    - Why were you created?
+    - Can you clarify your purpose?
+    - I'm curious, what are you designed to do?
+    - What's the reason for your existence?
+    - Could you explain your purpose to me?
+    - What's the goal behind your functionality?
+    - I'd like to understand your purpose better. Can you explain it to me?
+    - Can you provide insight into your intended use?
+    - What role do you play in this system?
+
+- intent: details
+  examples: |
+    - Can I get your contact detials?
+    - when can I meet your boss?
+    - may I know about his contact details
+    - can I get Mr Nikhil's Contact details
+    - Can i contact nikhil
+    - I want to meet nikhil
+    - i want to contact nikhil
+    - I need nikhil's details
+    - may I get Mr Nikhil's details
+    - I want to meet your boss
+    - How can I reach out to you?
+    - Can you provide me with your contact information?
+    - When is the best time to schedule a meeting with your supervisor?
+    - I'd like to get in touch with Mr. Nikhil. How can I reach him?
+    - Is it possible to contact Nikhil directly?
+    - I'm interested in meeting Nikhil. Can you arrange it?
+    - Can I have Nikhil's contact details, please?
+    - I need to speak with Nikhil. Can you provide his contact information?
+    - Could you please share Mr. Nikhil's contact details with me?
+    - I'd like to set up a meeting with your boss. How can I do that?
+
+- intent: projects
+  examples: |
+    - May I know what are the projects you have worked on?
+    - what are the projects you did?
+    - which projects has he worked on?
+    - tell me about his portfolio
+    - explain me about his work
+    - what are the projects Mr Nikhil has done in the past
+    - Could you provide details about your past projects?
+    - I'm interested in learning about the projects you've worked on.
+    - Can you share some information about your project experience?
+    - What kind of projects have you been involved in?
+    - Tell me about the projects you've completed.
+    - May I know about your portfolio of projects?
+    - Can you give me an overview of the projects you've undertaken?
+    - I'd like to hear about the projects Mr. Nikhil has undertaken in the past.
+    - Could you elaborate on the projects you've been a part of?
+    - What projects have you contributed to during your career?
+
+- intent: questionnaire
+  examples: |
+    - I have some questions to ask you?
+    - I have a few questions for Mr Nikhil
+    - Can I ask some questions to you?
+    - I'd like to conduct a questionnaire.
+    - May I pose some questions to you?
+    - I have a set of questions I'd like to ask.
+    - Can we proceed with a questionnaire?
+    - I have some inquiries for Mr. Nikhil. Is now a good time?
+    - Is it okay if I ask you a few questions?
+    - Can I engage in a brief questionnaire with you?
+    - I'd appreciate if you could answer a few questions for me.
+    - Can we go over some questions together?
+    - I have a questionnaire prepared. Would you be willing to participate?
+
+- intent: provide_name
+  examples: |
+    - My name is [John](name)
+    - Call me [Alice](name)
+    - You can call me [Bob](name)
+
+- intent: provide_location
+  examples: |
+    - I am from [New York](location)
+    - My location is [London](location)
+    - [Paris](location)

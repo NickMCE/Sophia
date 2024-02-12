@@ -1,0 +1,66 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: Bot work inquiry
+  steps:
+  - intent: work
+  - action: utter_work
+
+- story: Bot purpose inquiry
+  steps:
+  - intent: purpose
+  - action: utter_purpose
+
+- story: Bot contact details inquiry
+  steps:
+  - intent: details
+  - action: utter_details
+ # Respond with the work details, as there are no specific projects mentioned in the domain.
+
+- story: Bot questionnaire request
+  steps:
+  - intent: questionnaire
+  - action: utter_questionnaire
+
+# - story: provide_name_and_location
+#   steps:
+#     - intent: provide_name
+#       entities:
+#         - name: "John"
+#     - intent: provide_location
+#       entities:
+#         - location: "New York"
+#     - action: action_save_user_info
